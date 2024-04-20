@@ -7,6 +7,8 @@ import org.springframework.boot.runApplication
 class DemoApplication
 
 fun main(args: Array<String>) {
+    val driver = ParkingDriver().manageParking()
+
     runApplication<DemoApplication>(*args)
 }
 
@@ -63,22 +65,30 @@ fun main(args: Array<String>) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/**
+ * Parking Lot
+ * 		id fl
+ * Floor
+ *     id slots
+ * Slot
+ *    id suitableFor free?
+ *
+ * Vehicle
+ *   id reg type
+ *
+ * enum - V type
+ *
+ * ParkingTicket --
+ *
+ * park
+ * unpark
+ *
+ * init
+ * display the PL
+ *
+ *
+ *
+ * */
 
 
 
