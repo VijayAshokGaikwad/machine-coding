@@ -14,6 +14,8 @@ fun main(args: Array<String>) {
  * scoping
  * input handling
  * minimum requirement
+ * should go by main method Or controller service repo pattern
+ *
  *
  * */
 
