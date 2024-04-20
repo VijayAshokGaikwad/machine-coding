@@ -7,8 +7,41 @@ import org.springframework.boot.runApplication
 class DemoApplication
 
 fun main(args: Array<String>) {
-	runApplication<DemoApplication>(*args)
+    runApplication<DemoApplication>(*args)
 }
+
+/**
+ * scoping
+ * input handling
+ * minimum requirement
+ *
+ * */
+
+
+/**
+ *
+ * Splitwise :
+ * interface distribution
+ *
+ * class PercentDistribution
+ * class ExactDistribution
+ *
+ * User
+ * id name
+ *
+ * Transaction
+ * user		amount 		transContri
+ *
+ * TransParticipant
+ * distributionType 		Contri
+ *
+ * Ows
+ * userSource 	userDest	amount
+ *
+ *
+ * can transaction be done by multiple people
+ *
+ * */
 
 
 /*
