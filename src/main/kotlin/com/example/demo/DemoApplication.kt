@@ -12,12 +12,27 @@ fun main(args: Array<String>) {
 
 /**
  * scoping
- * input handling
  * minimum requirement
+ * how to do input handling ?
+ * database layer ?
  * should go by main method Or controller service repo pattern
  *
  *
  * */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /**
