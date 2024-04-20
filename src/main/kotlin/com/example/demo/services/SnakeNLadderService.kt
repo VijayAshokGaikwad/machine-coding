@@ -44,6 +44,8 @@ class SnakeNLadderService(
 
             val updatedPosition = updatePosition(playerWhoseTurnIs, currentInput = input)
 
+            // Board entity can be created - Board has - snakes, ladders, players, size default 100
+            // 100 can be replaced by Board size
             if (updatedPosition == 100) {
                 updatePlayer(playerWhoseTurnIs, updatedPosition)
 

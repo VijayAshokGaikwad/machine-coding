@@ -72,3 +72,82 @@ fun main(args: Array<String>) {
         }
         *
 * */
+
+
+/*
+ * Ideal design for Snake n ladder
+ *
+ *
+ * Snake
+ *      start   end
+ * Ladder
+ *      start   end
+ * Player
+ *      name    id      position
+ * Board
+ *      players     ladders     snakes      sizeOfBoard
+ *
+ *
+ * Dice
+ * DiceService
+ *      having roll function
+ *
+ * SnakeAndLadderService
+ *      having main logic
+ *      startGame function
+ *
+ *
+ * players can be managed with Queue
+ *
+ *
+ * */
+
+
+/**
+ * Ideal for Splitwise
+ *
+ *
+ * User (id name)
+ * Split (Subclasses EqualSplit, ExactSplit, PercentSplit)
+ * ExpenseMetadata (For Optional requirement #1)
+ * Expense (Subclasses EqualExpense, ExactExpense, PercentExpense)
+ * ExpenseType (enum to differentiate between different expense types)
+ *
+ *
+ * public class EqualSplit extends Split {
+ *     public EqualSplit(User user) {
+ *         super(user);
+ *     }
+ * }
+ *
+ * public class ExactSplit extends Split {
+ *     public ExactSplit(User user, double amount) {
+ *         super(user);
+ *         this.amount = amount;
+ *     }
+ * }
+ *
+ * public class PercentSplit extends Split {
+ *     double percent;
+ *
+ *     public PercentSplit(User user, double percent) {
+ *         super(user);
+ *         this.percent = percent;
+ *     }
+ *
+ *
+ * public abstract class Expense {
+ *     private String id;
+ *     private double amount;
+ *     private User paidBy;
+ *     private List<Split> splits;*
+ *    }
+ * }
+ *
+ * public class ExpenseManager {
+ *     List<Expense> expenses;
+ *     Map<String, User> userMap;
+ *     Map<String, Map<String, Double> > balanceSheet;
+ *    }
+ *
+ * */
