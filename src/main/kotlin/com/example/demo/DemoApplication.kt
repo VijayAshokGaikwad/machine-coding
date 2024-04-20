@@ -21,6 +21,60 @@ fun main(args: Array<String>) {
 
 
 /**
+ * Trello :
+ *
+ *
+ * Board :
+ *      id name lists, members(i.e. users)
+ *
+*  List
+ *      id name cards
+ * Card
+ *      id name assignedTo?
+*  Users
+ *      id name
+ *
+ *
+ * create , delete get add lists board
+ * add card
+ * assign card to user
+ * show
+ *
+ *
+ *
+ *
+ * */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
  *
  * Splitwise :
  * interface distribution
