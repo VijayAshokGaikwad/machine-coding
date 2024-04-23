@@ -7,7 +7,7 @@ import org.springframework.boot.runApplication
 class DemoApplication
 
 fun main(args: Array<String>) {
-    val driver = ParkingDriver().manageParking()
+    val driver = TicTakToe().init()
 
     runApplication<DemoApplication>(*args)
 }
@@ -228,5 +228,24 @@ fun main(args: Array<String>) {
  *     Map<String, User> userMap;
  *     Map<String, Map<String, Double> > balanceSheet;
  *    }
+ *
+ * */
+
+
+/**
+ * Game
+ *  size, Cell matrix size*size -1,
+ *
+ * Cell
+ *   piece:Piece? ,
+ *
+ * Player
+ *  id name , piece:Piece,   allPositions
+ *
+ *  Piece
+ *    id char
+ *
+ *
+ *
  *
  * */
