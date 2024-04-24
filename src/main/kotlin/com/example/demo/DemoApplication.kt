@@ -2,12 +2,23 @@ package com.example.demo
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
+import java.sql.Timestamp
+import java.text.SimpleDateFormat
+import java.time.format.DateTimeFormatter
+import java.util.*
 
 @SpringBootApplication
 class DemoApplication
 
 fun main(args: Array<String>) {
-    val driver = TicTakToe().init()
+    val fourSquareDriver = FourSquareDriver()
+    fourSquareDriver.importFile()
+    val text = "2011-10-02 18:48:05.123456"
+    val time1 = Timestamp.valueOf(text)
+
+    val text2 = "2014-10-02 18:48:05.123456"
+    val time2 = Timestamp.valueOf(text2)
+    println(fourSquareDriver.getMostCheckInsWithin(startTime = time1, endTime= time2))
 
     runApplication<DemoApplication>(*args)
 }
